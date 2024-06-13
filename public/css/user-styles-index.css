@@ -79,6 +79,7 @@ body {
     font-weight: 500;
     margin-left: 2.5rem;
     position: relative;
+    margin-top: 100px;
 }
 
 .navbar a::before {
@@ -90,6 +91,7 @@ body {
     height: 2px;
     background: #fff;
     transition: 0.3s;
+    
 }
 
 .navbar a:hover::before {

@@ -2,13 +2,14 @@ body {
     user-select: none;
     background-color: #101243;
     margin-left: 0;
-    font-family: sans-serif;
+    font-family: poppins;
 }
 
 /* -------------------------------------------------- */
 
 .header {
     position: fixed;
+    background-color: #101243;
     z-index: 2;
     top: 0;
     left: 0;
@@ -33,8 +34,8 @@ body {
     left: 0;
     width: 100%;
     height: 110%;
-    background: rgb(0, 0, 0, 0.1);
-    backdrop-filter: blur(50px);
+   /*  background: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px); */
     z-index: -1;
 }
 
@@ -43,7 +44,7 @@ body {
     width: 130px;
     height: 130px;
 
-    margin-top: -35px;
+    margin-top: -40px;
     cursor: pointer;
 
     margin-bottom: -70px;
@@ -145,57 +146,55 @@ body {
 }
 
 /* -------------------------------------------------- */
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+
+}
+.partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.partner-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.partner-image img{
+    border-radius: 25px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.partner-content{
+    flex: 1;
+}
+.partner-content h1{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #ffff;
+}
+.partner-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffff;
+
+}
 
 .Partners-text {
     margin-top: 130px;
     font-weight: 700;
     font-size: 35px;
     text-align: center;
-    color: #ffffff;
+    color: #ffff;
 }
 
-.Partner-topic {
-    font-weight: 600;
-    font-size: 25px;
-    color: #ffffff;
-    text-align: left;
-    margin-left: 40px;
-}
 
-.partner-content {
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    /* border: solid red; */
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.img-container {
-    height: auto;
-    width: 500px;
-    margin-left: 70px;
-    margin-right: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-}
-
-.partner-img {
-    height: auto;
-    width: 500px;
-}
-
-.partner-des {
-    width: 500px;
-    flex: 10;
-    color: #ffffff;
-    font-size: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
 /* ------------------partners------------------- */
 .partners * {
