@@ -23,6 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     /* font-family: "poppins", sans-serif; */
+    font-family: "Righteous", sans-serif;
 }
 
 .header * {
@@ -60,6 +61,7 @@ body {
     font-weight: 500;
     margin-left: 2.5rem;
     position: relative;
+    
 }
 
 .navbar a::before {
