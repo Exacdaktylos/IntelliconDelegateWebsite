@@ -55,13 +55,13 @@ body {
 }
 
 .navbar a {
-    font-size: 1.15rem;
+    font-size: 22px;
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     margin-left: 2.5rem;
     position: relative;
-    
+    margin-top: 100px;
 }
 
 .navbar a::before {

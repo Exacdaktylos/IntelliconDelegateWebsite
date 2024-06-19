@@ -5,14 +5,15 @@
 
 body {
     user-select: none;
-    background: #101243;
+    
+    background-image: linear-gradient(to right, #000033 , #120A8F);
     /* font-family: sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Righteous", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  /*font-weight: 400;*/
+  /*font-style: normal;*/
 }
 
 ::-webkit-scrollbar {
@@ -76,7 +77,7 @@ body {
 }
 
 .navbar a {
-    font-size: 20px;
+    font-size: 22px;
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
@@ -195,45 +196,42 @@ body {
 
 /* -------------------------------------------------- */
 
-.hero-section {
+section{
+    padding: 50px 14% 70px;
+}
+.home{
+    position: relative;
+    /*width: 92%;*/
     height: 100vh;
-    background-image: url("../img/back.jpg");
-    background-position: center;
+    background-image:url("../img/back.jpg") ;
     background-size: cover;
-    position: relative;
-   /*  font-family: sans-serif; */
-    
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
-
-.button {
-    padding: 1vw 2vw;
-    text-transform: uppercase;
-    border-radius: 8px;
-    font-size: 1vw;
+.home-text p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 33px;
+    margin-bottom: 100px;
+    margin-left: -45px;
+}
+.btn{
+    margin-bottom: 100px;
+    padding: 10px 35px;
+    background: #101a45;
+    color: #fff;
+    font-size: 18px;
     font-weight: 500;
-    color: #ffffff;
-    text-shadow: none;
-    background: transparent;
-    cursor: pointer;
-    box-shadow: transparent;
-    border: 1px solid #ffffff80;
-    transition: 0.5s ease;
-    user-select: none;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 60vh;
-   /*  font-family: sans-serif; */
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: all .50s ease;
+    margin-left: -45px;
+    text-decoration: none;
 }
-
-.button:hover,
-.button:focus {
-    color: #ffffff;
-    background: #008cff;
-    border: 1px solid #008cff;
-    text-shadow: 0 0 0.5vw #ffffff, 0 0 1vw #ffffff, 0 0 2vw #ffffff; /* Adjust text-shadow using viewport width units */
-    box-shadow: 0 0 0.5vw #008cff, 0 0 2vw #008cff, 0 0 5vw #008cff,
-        0 0 10vw #008cff; /* Adjust box-shadow using viewport width units */
+.btn:hover{
+    background: #3498fd;
 }
 
 @media screen and (max-width: 925px) {
@@ -245,17 +243,21 @@ body {
 }
 
 .glitch-text {
-    position: absolute;
+    
     color: #ffffff;
     font-weight: 700;
+    margin-bottom: 60px;
+    
+    margin-left: 140px;
+    text-align: left;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 2vw;
     transform: scale(2);
     padding: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    top: 275px;
-    font-family: "Jura", san-serif;
+    top: 100px;
+    font-family: "Bruno Ace SC", sans-serif;
 }
 
 .glitch-text:before,
@@ -806,28 +808,37 @@ body {
 }
 
 /*--------------------*/
-
-/*------------- faq -----------------*/
-
-.faq {
-    display: flex;
-}
-.faq-form-container {
-    width: 50%;
-    display: inline-flex;
-}
-.faq-form {
+.map-container{
+    max-width: 960px;
+    margin: auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    background: transparent;
+    
+    overflow: hidden;
 }
-
-.faq-form-div {
-    width: 80%;
+.mapcontent{
+    padding: 20px;
+}
+.mapcontent p{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1rem;
+   
+}
+.mapcontent img{
+    
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
 }
 
 .location-container {
-    width: 50%;
+    width: 100%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -836,46 +847,8 @@ body {
 .location-frame {
     margin-top: 10px;
     border-radius: 10px;
-    height: 368px;
-    width: 80%;
-}
-
-.faq-input {
-    color: white;
-    background-color: black;
-    border: solid white 1px;
-    border-radius: 6px;
-    width: 95%;
-    height: 40px;
-    margin-bottom: 25px;
-    padding: 6px 20px;
-}
-
-.faq-input::placeholder {
-    color: white;
-}
-
-.faq-input:focus {
-    outline: none;
-}
-
-.faq-btn {
-    border: none;
-    background-color: #ffbe33;
-    color: white;
-    width: 170px;
-    height: 36px;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-}
-
-.faq-btn:hover {
-    background-color: #e69c00;
-    cursor: pointer;
-}
-
-.faq h2 {
-    margin-bottom: 25px;
+    height: 500px;
+    width: 600px;
 }
 
 /* ----------------------------------- */
@@ -911,7 +884,56 @@ body {
     margin-top: 20px;
     text-align: center;
 }
+.timelinee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 9%;
+}
 
+.timelinee .timelinee-row{
+    display:flex ;
+}
+.timelinee-column .title{
+    font-size: 28px;
+    margin: 32px 0 16px 30px;
+}
+
+
+
+.timelinee-column .timelinee-box{
+    border-left: 2px solid #0ef;
+}
+.timelinee-box .timelinee-content{
+    position: relative;
+    padding-left: 27px;
+}
+.timelinee-box .timelinee-content::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    top: 0;
+    left: -10.5px;
+    height: 20px;
+    background: #0ef;
+    border-radius: 50%;
+}
+.timelinee-content .content .year{
+    font-size: 24px;
+    color: #0ef;
+}
+.timelinee-content .content{
+    padding: 24px;
+    border:2px solid #0ef ;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+.timelinee-content .content p{
+    color: #ffff;
+    font-size: 16px;
+
+}
 /* ------------------partners------------------- */
 
 .partners * {
