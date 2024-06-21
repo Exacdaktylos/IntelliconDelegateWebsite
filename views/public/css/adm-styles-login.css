@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    user-select: none;
+    position: relative;
+}
+.label-token {
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+.form {
+    width: 100%;
+}
+.input-token {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    width: 50%;
+    border: none;
+    height: 35px;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+.input-token:focus {
+    width: 60%;
+    outline: none;
+}
+.btn-submit {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    border: none;
+    background-color: wheat;
+    margin-top: 5px;
+    padding: 10px 50px;
+    transition: border-radius 0.5s;
+}
+.btn-submit:hover {
+    cursor: pointer;
+    border-radius: 100px;
+}
+.error {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    margin-top: 10px;
+    color: red;
+}
