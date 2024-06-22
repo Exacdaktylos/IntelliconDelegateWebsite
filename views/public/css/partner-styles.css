@@ -217,7 +217,7 @@ body {
 }
 
 .Partners-text {
-    margin-top: 130px;
+    margin-top: 20px;
     font-weight: 700;
     font-size: 35px;
     text-align: center;
@@ -229,7 +229,7 @@ body {
 /* ------------------partners------------------- */
 .partners * {
     padding: 0;
-    margin: 0;
+    margin-bottom: 60px;
     box-sizing: border-box;
 }
 
@@ -244,6 +244,7 @@ body {
 
     display: grid;
     place-content: center;
+    
 }
 
 .partners-card img {
@@ -462,4 +463,11 @@ body {
         margin-top: 10px;
         margin-bottom: 20px;
     }
+}
+
+
+.cardtext{
+    font-size: 36px;
+    margin-left: 10px;
+    margin-top: 50px;
 }

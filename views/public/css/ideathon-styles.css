@@ -316,7 +316,7 @@ section {
     right: 0;
     background: #111;
     height: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding-top: 40px;
     color: #ffffff;
 }
@@ -434,4 +434,5 @@ section {
     color: white;
     width: 85%;
     margin-left: 120px;
+    margin-bottom: -20px;
 }
