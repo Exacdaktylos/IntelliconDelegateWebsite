@@ -67,7 +67,7 @@ text-align: center;
 
 
 .introsection{
-  height: 100vh;
+  height: auto;
   display: flex;
   max-width: fit-content;
 }
@@ -76,6 +76,7 @@ display: grid;
 grid-template-columns: repeat(4, 1fr); /* Four columns of equal width */
 grid-template-rows: repeat(5, 1fr); /* Five rows of equal height */
 gap: 10px; 
+height: auto;
 
 }
 .card-wrapper {
@@ -324,7 +325,7 @@ width: 100%;  /* Adjust width as needed */
   right: 0;
   background: #111;
   height: auto;
-margin-top: 30px;
+margin-top: -240px;
   padding-top: 40px;
   color: #ffffff;
 }

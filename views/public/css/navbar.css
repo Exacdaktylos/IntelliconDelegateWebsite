@@ -44,7 +44,7 @@
 }
 
 .navbar a {
-    font-size: 20px;
+    font-size: 22px;
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
@@ -149,14 +149,4 @@
         opacity: 1;
         transition-delay: calc(0.15s * var(--i));
     }
-}
-
-.title-text {
-    text-align: center;
-    font-size: larger;
-    color: #ffffff;
-   /*  font-family: "poppins", sans-serif; */
-    font-weight: 500;
-    font-size: 4.5vw;
-    margin: 0px;
 }
