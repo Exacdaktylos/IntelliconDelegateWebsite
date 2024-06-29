@@ -35,7 +35,20 @@ body {
 
 .introsection{
     height: 100vh;
+    display: flex;
+    max-width: fit-content;
+}
 
+.cardleft{
+  
+  align-items:start;  /* Aligns child elements vertically */
+  justify-content: start;
+}
+
+.cardcenter{
+  display: flex;
+    align-items:center;  /* Aligns child elements vertically */
+    justify-content: center;
 }
 
 .introsection > * { /* Target all child elements */
@@ -44,8 +57,8 @@ body {
 
 
 .card {
-  width: 280px;
-  height: 280px;
+  width: 298px;
+  height: 298px;
   background: rgba(20, 7, 202, 0.582);
   border-radius: 32px;
   padding: 3px;
@@ -53,6 +66,7 @@ body {
   box-shadow: #604b4a30 0px 70px 30px -50px;
   transition: all 0.5s ease-in-out;
   opacity: 100%;
+  margin: 10px;
 }
 
 .card .mail {
@@ -209,10 +223,10 @@ body {
   transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
 }
 
-.card:hover .profile-pic:hover {
+/* .card:hover .profile-pic:hover {
   transform: scale(2);
   border-radius: 20px;
-}
+} */
 
 /* .card:hover .profile-pic img {
   transform: scale(2.5);
@@ -230,4 +244,11 @@ body {
 .card-text{
   color: white;
   top:24px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap cards to next line when full */
+  width: 100%;  /* Adjust width as needed */
+  
 }
